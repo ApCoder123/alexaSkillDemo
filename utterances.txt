@@ -1,0 +1,52 @@
+GetNewRandomFactIntent a fact
+GetNewRandomFactIntent give me a random fact
+GetNewRandomFactIntent give me a random number fact
+GetNewRandomFactIntent tell me a random fact
+GetNewRandomFactIntent tell me a random number fact
+GetNewRandomFactIntent a number fact
+GetNewRandomFactIntent tell me a fact
+GetNewRandomFactIntent tell me a number fact
+GetNewRandomFactIntent give me a fact
+GetNewRandomFactIntent give me a number fact
+GetNewRandomFactIntent give me some information
+GetNewRandomFactIntent give me some number information
+GetNewRandomFactIntent tell me something
+GetNewRandomFactIntent give me something
+GetNewTriviaFactIntent tell me trivia
+GetNewTriviaFactIntent tell me a number trivia
+GetNewTriviaFactIntent give me trivia
+GetNewTriviaFactIntent give me a number trivia
+GetNewTriviaFactIntent a trivia
+GetNewTriviaFactIntent a number trivia
+GetNewTriviaFactIntent tell me a trivia
+GetNewTriviaFactIntent tell me a trivia fact
+GetNewTriviaFactIntent give me a trivia
+GetNewTriviaFactIntent give me a trivia fact
+GetNewTriviaFactIntent give me some trivia
+GetNewTriviaFactIntent give some trivia
+GetNewYearFactIntent a year
+GetNewYearFactIntent a year fact
+GetNewYearFactIntent tell me a year
+GetNewYearFactIntent tell me a year fact
+GetNewYearFactIntent give me a year
+GetNewYearFactIntent give me a year fact
+GetNewYearFactIntent give me some year information
+GetNewYearFactIntent year
+GetNewDateFactIntent a date
+GetNewDateFactIntent a date fact
+GetNewDateFactIntent tell me a date
+GetNewDateFactIntent tell me a date fact
+GetNewDateFactIntent give me a date
+GetNewDateFactIntent give me a date fact
+GetNewDateFactIntent give me some date information
+GetNewDateFactIntent date
+GetNewMathFactIntent a math fact
+GetNewMathFactIntent a maths fact
+GetNewMathFactIntent tell me a math fact
+GetNewMathFactIntent tell me a maths fact
+GetNewMathFactIntent give me a math fact
+GetNewMathFactIntent give me a maths fact
+GetNewMathFactIntent give me some math information
+GetNewMathFactIntent give me some maths information
+GetNewMathFactIntent math
+GetNewMathFactIntent maths
