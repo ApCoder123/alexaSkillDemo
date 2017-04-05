@@ -1,0 +1,28 @@
+{
+  "intents": [
+    {
+      "intent": "GetNewRandomFactIntent"
+    },
+    {
+      "intent": "GetNewTriviaFactIntent"
+    },
+    {
+      "intent": "GetNewYearFactIntent"
+    },
+    {
+      "intent": "GetNewDateFactIntent"
+    },
+    {
+      "intent": "GetNewMathFactIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
