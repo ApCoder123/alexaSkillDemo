@@ -1,6 +1,6 @@
 'use strict';
 var Alexa = require('alexa-sdk');
-var APP_ID = 'amzn1.ask.skill.d6bdc400-e68d-4254-b539-50db958d4dd4';
+var APP_ID = undefined;
 
 
 var SKILL_NAME = 'number facts';
