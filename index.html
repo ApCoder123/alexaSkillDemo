@@ -13,10 +13,9 @@
     <section class="page-header">
       <h1 class="project-name">Alexa Skills Workshop</h1>
       <h2 class="project-tagline">A Guide to creating your first Alexa Skill</h2>
-        <h3 class="project-tagline">By Arun Pattni in Association with Acorn Aspirations</h3>
+        <h3 class="project-tagline">By Arun Pattni</h3>
       <a href="https://github.com/ApCoder123/alexaSkillDemo" class="btn">View on GitHub</a>
-      <a href="https://s3.amazonaws.com/alexatutorials/Fact/tutorial_assets/FactSkillTemplate.zip" class="btn">Download original .zip</a>
-      <a href="https://github.com/ApCoder123/alexaSkillDemo/blob/master/Final.js" class="btn">Download final .zip</a>
+      
     </section>
 
     <section class="main-content">
@@ -29,34 +28,48 @@
       <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Info</h2>
 
       <blockquote>
-      <p>This is a workshop, led by Arun Pattni at #AcornHackAI. The resources on this page are under the GNU Affero General Public License v3.0</p>
+      <p>This is an open source workshop on creating an Alexa Skill by Arun Pattni.&copy;	Arun Pattni 2017. All Rights Reserved </p>
       </blockquote>
       
       <h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Please Note</h2>
-      <blockquote>
-        <p>After the hackathon, some parts of code will not be available in the presentation, due to code safety issues. If you need any code contact arun@acornaspirations.co.uk</p>
-        <p>Also all logins will also not be available afterwards</p>
-      </blockquote>
+
 
       <h3>
       <a id="user-content-header-3" class="anchor" href="#header-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Intents and Sample Utterances</h3>
 
       <pre><code>{
+  {
   "intents": [
     {
-      "intent": "GetNewRandomFactIntent"
+      "intent": "AboutIntent",  "slots":[]
+    },
+
+    {
+      "intent": "CoffeeIntent",  "slots":[]
     },
     {
-      "intent": "GetNewTriviaFactIntent"
+      "intent": "BreakfastIntent",  "slots":[]
     },
     {
-      "intent": "GetNewYearFactIntent"
+      "intent": "LunchIntent",  "slots":[]
     },
     {
-      "intent": "GetNewDateFactIntent"
+      "intent": "DinnerIntent",  "slots":[]
     },
     {
-      "intent": "GetNewMathFactIntent"
+      "intent": "AttractionIntent",
+      "slots":[
+        { "name":"distance", "type":"AMAZON.NUMBER" }
+      ]
+    },
+    {
+      "intent": "GoOutIntent",  "slots":[]
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
     },
     {
       "intent": "AMAZON.HelpIntent"
@@ -68,60 +81,29 @@
       "intent": "AMAZON.CancelIntent"
     }
   ]
-}</code></pre>
+}
+</code></pre>
         <pre><code>
-        GetNewRandomFactIntent a fact
-GetNewRandomFactIntent give me a random fact
-GetNewRandomFactIntent give me a random number fact
-GetNewRandomFactIntent tell me a random fact
-GetNewRandomFactIntent tell me a random number fact
-GetNewRandomFactIntent a number fact
-GetNewRandomFactIntent tell me a fact
-GetNewRandomFactIntent tell me a number fact
-GetNewRandomFactIntent give me a fact
-GetNewRandomFactIntent give me a number fact
-GetNewRandomFactIntent give me some information
-GetNewRandomFactIntent give me some number information
-GetNewRandomFactIntent tell me something
-GetNewRandomFactIntent give me something
-GetNewTriviaFactIntent tell me trivia
-GetNewTriviaFactIntent tell me a number trivia
-GetNewTriviaFactIntent give me trivia
-GetNewTriviaFactIntent give me a number trivia
-GetNewTriviaFactIntent a trivia
-GetNewTriviaFactIntent a number trivia
-GetNewTriviaFactIntent tell me a trivia
-GetNewTriviaFactIntent tell me a trivia fact
-GetNewTriviaFactIntent give me a trivia
-GetNewTriviaFactIntent give me a trivia fact
-GetNewTriviaFactIntent give me some trivia
-GetNewTriviaFactIntent give some trivia
-GetNewYearFactIntent a year
-GetNewYearFactIntent a year fact
-GetNewYearFactIntent tell me a year
-GetNewYearFactIntent tell me a year fact
-GetNewYearFactIntent give me a year
-GetNewYearFactIntent give me a year fact
-GetNewYearFactIntent give me some year information
-GetNewYearFactIntent year
-GetNewDateFactIntent a date
-GetNewDateFactIntent a date fact
-GetNewDateFactIntent tell me a date
-GetNewDateFactIntent tell me a date fact
-GetNewDateFactIntent give me a date
-GetNewDateFactIntent give me a date fact
-GetNewDateFactIntent give me some date information
-GetNewDateFactIntent date
-GetNewMathFactIntent a math fact
-GetNewMathFactIntent a maths fact
-GetNewMathFactIntent tell me a math fact
-GetNewMathFactIntent tell me a maths fact
-GetNewMathFactIntent give me a math fact
-GetNewMathFactIntent give me a maths fact
-GetNewMathFactIntent give me some math information
-GetNewMathFactIntent give me some maths information
-GetNewMathFactIntent math
-GetNewMathFactIntent maths
+AboutIntent about
+AboutIntent tell me about this place
+
+CoffeeIntent coffee
+CoffeeIntent coffee shop
+
+BreakfastIntent breakfast
+LunchIntent lunch
+DinnerIntent dinner
+
+AttractionIntent recommend an attraction
+AttractionIntent recommend an attraction within {distance} miles
+
+AttractionIntent give me an activity
+AttractionIntent give me an activity within {distance} miles
+
+GoOutIntent go out
+GoOutIntent go outside
+GoOutIntent lets go out
+
         
         
         
