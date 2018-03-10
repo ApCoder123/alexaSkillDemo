@@ -7,17 +7,17 @@ var https = require('https');
 var languageStrings = {
     'en': {
         'translation': {
-            'WELCOME' : "Welcome to Gloucester Guide!",
+            'WELCOME' : "Welcome to London Guide!",
             'HELP'    : "Say about, to hear more about the city, or say coffee, breakfast, lunch, or dinner, to hear local restaurant suggestions, or say recommend an attraction, or say, go outside. ",
-            'ABOUT'   : "Gloucester Massachusetts is a city on the Atlantic Ocean.  A popular summer beach destination, Gloucester has a rich history of fishing and ship building.",
+            'ABOUT'   : "London is the capital city of the UK.  A popular tourist destination, London has a rich history of architecture and finance.",
             'STOP'    : "Okay, see you next time!"
         }
     }
 };
 //Data we will use later
 var data = {
-    "city"        : "Gloucester",
-    "state"       : "MA",
+    "city"        : "London",
+    "state"       : "UK",
     "postcode"    : "01930",
     "restaurants" : [
         { "name":"Zeke's Place",
@@ -297,4 +297,3 @@ function randomArrayElement(array) {
     i = Math.floor(Math.random() * array.length);
     return(array[i]);
 }
-//Disclaimer: This code is taken from the Alexa cookbook as it was a good fit for this demo. I have changed it slightly and added in comments to explain things more. I do know what I am doing
