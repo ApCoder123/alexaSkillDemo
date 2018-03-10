@@ -19,96 +19,120 @@
     </section>
 
     <section class="main-content">
-
+<!--
       <h1>
       <a id="user-content-header-1" class="anchor" href="#header-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Presentation</h1>
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQXIGdZWOMEmP5xEH3QXELtEKSiY8l1iPsDvF0Dre8-l_9uYo5tbaYX_pKe9ncH4kIOZI5L3q5KbT6h/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
+-->
       <h2>
       <a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Info</h2>
 
       <blockquote>
-      <p>This is an open source workshop on creating an Alexa Skill by Arun Pattni. Presentation &copy;	Arun Pattni 2017. All Rights Reserved. Code belongs to https://github.com/alexa/alexa-cookbook/tree/master/labs/LocalRecommendations</p>
+      <p>Workshop on creating an Alexa Skill by Arun Pattni. Presentation &copy;	Arun Pattni 2018. All Rights Reserved.</p>
       </blockquote>
       
       <h2><a id="user-content-header-2" class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Please Note</h2>
 
 
       <h3>
-      <a id="user-content-header-3" class="anchor" href="#header-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Intents and Sample Utterances</h3>
+      <a id="user-content-header-3" class="anchor" href="#header-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Interaction Model</h3>
 
       <pre><code>{
-  {
-  "intents": [
-    {
-      "intent": "AboutIntent",  "slots":[]
-    },
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "city guide",
+      "intents": [
+        {
+          "name": "AboutIntent",
+          "samples": [
+            "about",
+            "tell me about this place"
+          ],
+          "slots": []
+        },
 
-    {
-      "intent": "CoffeeIntent",  "slots":[]
-    },
-    {
-      "intent": "BreakfastIntent",  "slots":[]
-    },
-    {
-      "intent": "LunchIntent",  "slots":[]
-    },
-    {
-      "intent": "DinnerIntent",  "slots":[]
-    },
-    {
-      "intent": "AttractionIntent",
-      "slots":[
-        { "name":"distance", "type":"AMAZON.NUMBER" }
+        {
+          "name": "CoffeeIntent",
+          "samples": [
+            "coffee"
+          ],
+          "slots": []
+        },
+        {
+          "name": "BreakfastIntent",
+          "samples": [
+            "breakfast"
+          ],
+          "slots": []
+        },
+        {
+          "name": "LunchIntent",
+          "samples": [
+            "lunch"
+          ],
+          "slots": []
+        },
+        {
+          "name": "DinnerIntent",
+          "samples": [
+            "dinner"
+          ],
+          "slots": []
+        },
+
+        {
+          "name": "AttractionIntent",
+          "samples": [
+            "recommend an attraction",
+            "recommend an attraction within {distance} miles",
+            "give me an activity",
+            "give me an activity within {distance} miles"
+          ],
+          "slots": [
+            {
+              "name": "distance",
+              "type": "AMAZON.NUMBER",
+              "samples": []
+            }
+          ]
+        },
+
+        {
+          "name": "GoOutIntent",
+          "samples": [
+            "go out",
+            "go outside",
+            "lets go out"
+          ],
+          "slots": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        }
       ]
-    },
-    {
-      "intent": "GoOutIntent",  "slots":[]
-    },
-    {
-      "intent": "AMAZON.YesIntent"
-    },
-    {
-      "intent": "AMAZON.NoIntent"
-    },
-    {
-      "intent": "AMAZON.HelpIntent"
-    },
-    {
-      "intent": "AMAZON.StopIntent"
-    },
-    {
-      "intent": "AMAZON.CancelIntent"
     }
-  ]
+  }
 }
 </code></pre>
-        <pre><code>
-AboutIntent about
-AboutIntent tell me about this place
 
-CoffeeIntent coffee
-CoffeeIntent coffee shop
-
-BreakfastIntent breakfast
-LunchIntent lunch
-DinnerIntent dinner
-
-AttractionIntent recommend an attraction
-AttractionIntent recommend an attraction within {distance} miles
-
-AttractionIntent give me an activity
-AttractionIntent give me an activity within {distance} miles
-
-GoOutIntent go out
-GoOutIntent go outside
-GoOutIntent lets go out
-
-        
-        
-        
-        
-        </code></pre>
 
 
 
