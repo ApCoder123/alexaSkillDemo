@@ -1,7 +1,18 @@
+/* eslint-disable  func-names */
+/* eslint quote-props: ["error", "consistent"]*/
+/**
+ * This sample demonstrates a simple skill built with the Amazon Alexa Skills
+ * nodejs skill development kit.
+ * This sample supports multiple lauguages. (en-US, en-GB, de-DE).
+ * The Intent Schema, Custom Slots and Sample Utterances for this skill, as well
+ * as testing instructions are located at https://github.com/alexa/skill-sample-nodejs-fact
+ **/
 
-//Importing libraries
-var Alexa = require('alexa-sdk');
-var https = require('https');
+'use strict';
+const Alexa = require('alexa-sdk');
+const https = require('https');
+
+const APP_ID='';
 
 //Defining the Strings used later on
 var languageStrings = {
@@ -14,6 +25,7 @@ var languageStrings = {
         }
     }
 };
+
 //Data we will use later
 var data = {
     "city"        : "London",
@@ -93,7 +105,7 @@ var myAPI = {
 //Defining exports for Lambda function
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
-    alexa.appId = undefined;
+    alexa.appId = APP_ID;
     alexa.resources = languageStrings;
     alexa.registerHandlers(handlers);
     alexa.execute();
